@@ -1,0 +1,17 @@
+//Start to GRID page
+/*|- Start GRID page configuration -|*/
+
+.container{
+    @include for-desktop-media{
+        width: 75%;
+    }
+    @include for-tablet-media{
+        width: 100%;
+    }
+    width: 80%;
+    display: grid;
+    grid-auto-flow: dense;
+    gap: 0.5rem;
+    grid-auto-rows: 28rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
